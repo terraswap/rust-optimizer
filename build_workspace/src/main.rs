@@ -68,6 +68,7 @@ fn main() {
                 "--release",
                 "--target=wasm32-unknown-unknown",
                 "--locked",
+                "--features=terra"
             ])
             .env("RUSTFLAGS", "-C link-arg=-s")
             .current_dir(canonicalize(contract).unwrap())
